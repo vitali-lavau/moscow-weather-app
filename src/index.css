@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes kenburns-right {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 50%;
+            transform-origin: 84% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1.15) translateX(20px);
+            transform: scale(1.15) translateX(20px);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+@keyframes kenburns-right {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 50%;
+            transform-origin: 84% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1.15) translateX(20px);
+            transform: scale(1.15) translateX(20px);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+
+.kenburns-right {
+  -webkit-animation: kenburns-right 5s ease-out both;
+          animation: kenburns-right 5s ease-out both;
+}
+
+body {
+  color: #1e293b;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 14px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.25;
+}
+
+h2 {
+  margin: 0 0 24px;
+  font-size: 24px;
+  font-weight: 700;
+
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+}
+
+p {
+  font-size: 16px;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 14px;
+  }
+}
+
+input {
+  padding: 8px 16px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #8ec5ff;
+  border-radius: 8px;
+  transition: all .4s;
+
+  &:focus {
+    border-color: #2b7fff;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 14px;
+  }
+}
+
+button {
+  cursor: pointer;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  background-color: #155dfc;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  transition: all .4s;
+
+  &:hover {
+    background-color: #1447e6;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 14px;
+  }
+}
